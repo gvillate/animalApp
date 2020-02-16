@@ -9,11 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var animalList: AnimalList?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        animalList = AnimalList()
+        
     }
+    
+    
 
 
 }
