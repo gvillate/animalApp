@@ -8,17 +8,15 @@
 
 import Foundation
 
+enum Diet: Int {
+    case OMNIVORE = 0, CARNIVORE = 1, HERBIVORE = 2
+}
+
 class Animal {
     var name: String
     var diet: Diet
     var legs: Int
     var sound: String
-    
-    enum Diet {
-        case OMNIVORE
-        case CARNIVORE
-        case HERBIVORE
-    }
     
     init(name: String, diet: Diet, legs: Int, sound: String) {
         self.name = name
