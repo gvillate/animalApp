@@ -24,23 +24,21 @@ class AnimalList {
     }
     
     func getNext() -> Animal? {
-        currentAnimal += 1
-        
-        if (currentAnimal >= numberOfAnimals) {
+        if (currentAnimal >= numberOfAnimals - 1) {
             return nil
         }
         else {
+            currentAnimal += 1
             return list[currentAnimal].animal
         }
     }
     
     func getPrevious() -> Animal? {
-        currentAnimal -= 1
-        
-        if (currentAnimal < 0) {
+        if (currentAnimal <= 0) {
             return nil
         }
         else {
+            currentAnimal -= 1
             return list[currentAnimal].animal
         }
     }
