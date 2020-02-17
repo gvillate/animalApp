@@ -23,7 +23,6 @@ class searchViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     @IBAction func searchAnimal(_ sender: Any) {
         let searchAlert = UIAlertController(title: "Search for Animal", message: "", preferredStyle: .alert)
         
@@ -53,6 +52,24 @@ class searchViewController: UIViewController {
         searchAlert.addAction(cancelAction)
         
         self.present(searchAlert, animated: true, completion: nil)
+    }
+    
+    @IBAction func getPrevious(_ sender: Any) {
+        if let previousAnimal = self.animalList.getPrevious() {
+            self.nameField.text = previousAnimal.getName()
+            self.dietControl.selectedSegmentIndex = previousAnimal.getDietIndex()
+            self.soundField.text = previousAnimal.getSound()
+            self.legField.text = "\(previousAnimal.getLegs())"
+        }
+    }
+    
+    @IBAction func getNext(_ sender: Any) {
+        if let nextAnimal = self.animalList.getNext() {
+            self.nameField.text = nextAnimal.getName()
+            self.dietControl.selectedSegmentIndex = nextAnimal.getDietIndex()
+            self.soundField.text = nextAnimal.getSound()
+            self.legField.text = "\(nextAnimal.getLegs())"
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

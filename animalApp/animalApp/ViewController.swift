@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         if let name = nameField.text, let sound = soundField.text, let legs = Int(legLabel.text!) {
             let diet = getDiet()
             animalList.add(Animal(name: name, diet: diet, legs: legs, sound: sound))
+            clearFields()
         }
         animalList.printAnimals()
     }
@@ -35,6 +36,12 @@ class ViewController: UIViewController {
         legLabel.text = "\(Int(legStepper.value))"
     }
     
+    func clearFields() {
+        nameField.text = ""
+        soundField.text = ""
+        legLabel.text = "0"
+        dietControl.selectedSegmentIndex = 0
+    }
     
     func getDiet() -> Diet {
         var diet: Diet
