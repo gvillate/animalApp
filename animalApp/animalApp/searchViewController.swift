@@ -79,9 +79,9 @@ class searchViewController: UIViewController {
     }
     
     func disableFields() {
-        nameField.allowsEditingTextAttributes = false
-        soundField.allowsEditingTextAttributes = false
-        legField.allowsEditingTextAttributes = false
+        nameField.isUserInteractionEnabled = false
+        soundField.isUserInteractionEnabled = false
+        legField.isUserInteractionEnabled = false
         dietControl.isEnabled = false
     }
 
