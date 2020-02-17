@@ -33,6 +33,10 @@ class Animal {
         return self.diet
     }
     
+    func getDietIndex() -> Int {
+        return self.diet.rawValue
+    }
+    
     func getLegs() -> Int {
         return self.legs
     }

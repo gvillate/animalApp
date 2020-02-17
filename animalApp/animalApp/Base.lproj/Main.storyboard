@@ -158,7 +158,11 @@
                                 <items>
                                     <barButtonItem title="Prev" id="0nC-q0-ChE"/>
                                     <barButtonItem width="128" style="plain" systemItem="fixedSpace" id="jne-Sg-N2a"/>
-                                    <barButtonItem title="Item" systemItem="search" id="CzO-sI-xKu"/>
+                                    <barButtonItem title="Item" systemItem="search" id="CzO-sI-xKu">
+                                        <connections>
+                                            <action selector="searchAnimal:" destination="1N3-Dl-d2D" id="Z4d-Tl-lX1"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="130" style="plain" systemItem="fixedSpace" id="Rk5-QM-CCd"/>
                                     <barButtonItem title="Next" id="ibT-yk-moI"/>
                                 </items>
@@ -234,6 +238,12 @@
                         <color key="tintColor" red="0.30196078430000001" green="0.63529411759999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="nyX-Ui-6Ft"/>
                     </view>
+                    <connections>
+                        <outlet property="dietControl" destination="DwN-nJ-CVI" id="okH-9h-2I4"/>
+                        <outlet property="legField" destination="ExO-tQ-uzk" id="je1-PO-Vw0"/>
+                        <outlet property="nameField" destination="zW5-iV-xv5" id="Wxn-1p-0BY"/>
+                        <outlet property="soundField" destination="xAl-29-RJO" id="w22-ZE-X16"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGQ-YC-ZDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
