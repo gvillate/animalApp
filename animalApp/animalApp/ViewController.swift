@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         soundField.text = ""
         legLabel.text = "0"
         dietControl.selectedSegmentIndex = 0
+        legStepper.value = 0.0
     }
     
     func getDiet() -> Diet {

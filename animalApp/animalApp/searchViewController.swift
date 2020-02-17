@@ -19,7 +19,7 @@ class searchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        disableFields()
         // Do any additional setup after loading the view.
     }
     
@@ -76,6 +76,13 @@ class searchViewController: UIViewController {
         if let destination = segue.destination as? ViewController {
             destination.animalList = self.animalList
         }
+    }
+    
+    func disableFields() {
+        nameField.allowsEditingTextAttributes = false
+        soundField.allowsEditingTextAttributes = false
+        legField.allowsEditingTextAttributes = false
+        dietControl.isEnabled = false
     }
 
 }
