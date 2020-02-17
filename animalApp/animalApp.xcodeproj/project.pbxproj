@@ -65,13 +65,13 @@
 			children = (
 				5ACC791A23FA00680033A439 /* AppDelegate.swift */,
 				5ACC791C23FA00680033A439 /* ViewController.swift */,
+				5ACC792F23FA11DD0033A439 /* searchViewController.swift */,
 				A833606C23FA0CE70073C20E /* AnimalList.swift */,
 				A833606E23FA0D120073C20E /* Animal.swift */,
 				5ACC791E23FA00680033A439 /* Main.storyboard */,
 				5ACC792123FA00690033A439 /* Assets.xcassets */,
 				5ACC792323FA00690033A439 /* LaunchScreen.storyboard */,
 				5ACC792623FA00690033A439 /* Info.plist */,
-				5ACC792F23FA11DD0033A439 /* searchViewController.swift */,
 			);
 			path = animalApp;
 			sourceTree = "<group>";

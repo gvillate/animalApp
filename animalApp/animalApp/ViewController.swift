@@ -28,6 +28,7 @@ class ViewController: UIViewController {
             let diet = getDiet()
             animalList.add(Animal(name: name, diet: diet, legs: legs, sound: sound))
         }
+        animalList.printAnimals()
     }
     
     @IBAction func updateLegs(_ sender: Any) {
