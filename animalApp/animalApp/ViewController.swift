@@ -30,6 +30,11 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func updateLegs(_ sender: Any) {
+        legLabel.text = "\(Int(legStepper.value))"
+    }
+    
+    
     func getDiet() -> Diet {
         var diet: Diet
         let dietChoice: Int = dietControl.selectedSegmentIndex
