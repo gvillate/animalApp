@@ -13,6 +13,8 @@
 		5ACC792223FA00690033A439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ACC792123FA00690033A439 /* Assets.xcassets */; };
 		5ACC792523FA00690033A439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACC792323FA00690033A439 /* LaunchScreen.storyboard */; };
 		5ACC792E23FA07030033A439 /* orange juice 2.0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ACC792D23FA06E20033A439 /* orange juice 2.0.ttf */; };
+		A833606D23FA0CE70073C20E /* AnimalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833606C23FA0CE70073C20E /* AnimalList.swift */; };
+		A833606F23FA0D120073C20E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833606E23FA0D120073C20E /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5ACC792423FA00690033A439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ACC792623FA00690033A439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ACC792D23FA06E20033A439 /* orange juice 2.0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orange juice 2.0.ttf"; sourceTree = "<group>"; };
+		A833606C23FA0CE70073C20E /* AnimalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalList.swift; sourceTree = "<group>"; };
+		A833606E23FA0D120073C20E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			children = (
 				5ACC791A23FA00680033A439 /* AppDelegate.swift */,
 				5ACC791C23FA00680033A439 /* ViewController.swift */,
+				A833606C23FA0CE70073C20E /* AnimalList.swift */,
+				A833606E23FA0D120073C20E /* Animal.swift */,
 				5ACC791E23FA00680033A439 /* Main.storyboard */,
 				5ACC792123FA00690033A439 /* Assets.xcassets */,
 				5ACC792323FA00690033A439 /* LaunchScreen.storyboard */,
@@ -148,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ACC791D23FA00680033A439 /* ViewController.swift in Sources */,
+				A833606F23FA0D120073C20E /* Animal.swift in Sources */,
 				5ACC791B23FA00680033A439 /* AppDelegate.swift in Sources */,
+				A833606D23FA0CE70073C20E /* AnimalList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
