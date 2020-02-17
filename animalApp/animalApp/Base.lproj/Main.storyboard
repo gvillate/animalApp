@@ -118,6 +118,8 @@
                     </view>
                     <connections>
                         <outlet property="dietControl" destination="k5j-Ix-BA9" id="LcN-Bd-VB8"/>
+                        <outlet property="legLabel" destination="whD-3X-BT6" id="Y4T-r3-kS5"/>
+                        <outlet property="legStepper" destination="pAm-QF-E1K" id="yzw-o8-isM"/>
                         <outlet property="nameField" destination="yzN-jV-L9M" id="nOe-LH-W4u"/>
                         <outlet property="soundField" destination="dPu-Ex-pHx" id="MPk-mz-d7A"/>
                     </connections>
